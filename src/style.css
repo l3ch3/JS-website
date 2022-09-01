@@ -1,0 +1,372 @@
+body{font-family: 'Nunito', sans-serif;
+ 
+}
+
+p, h1, h2, li{color: white;}
+h1{
+    font-size: 2em;
+}
+
+nav{
+    z-index: 100;
+    position: sticky;
+    top:0;
+    background-color: #7395AE;
+    display: flex;
+    justify-content: space-between;
+}
+  
+.logo{
+    height: 75px;
+    width: 75px;
+    margin: 0 15px
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+ul.show{  /*for javscript - shows list when the hamburger button is clicked*/
+    display:block;
+}
+
+li{
+    margin: 0 25px;
+    font-size: x-large;
+}
+
+li:hover{
+    font-weight: bold;
+}
+
+.hamburger{ /*hides hambuger */
+    display: none;
+}
+
+/*Hero*/
+
+.hero{
+    background-color:#5D5C61;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:inherit;
+    max-width: 400px;
+    margin: 0 5%;
+}
+
+.intro-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 400px;
+}
+
+.btn-cv, .btn-skills, .btn-plan{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    display:flex;
+    margin-left: 0; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-size: auto;
+    background-color: #557A95;
+}
+
+.btn-cv:hover{
+    font-weight:bolder;
+}
+.btn-skills:hover{
+    font-weight:bolder;
+}
+.btn-plan:hover{
+    font-weight:bolder;
+}
+.profile-pic{
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+}
+
+section{
+   height: 500px;
+}
+
+/*Skills section*/
+
+.skill-experience{
+    display: flex;
+    flex-direction: row;
+    background-color: #a1bbb6;
+    height: fit-content; 
+}
+.skills{ /* split the width section into 50%*/
+    width: 50%;
+}
+
+.skills-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 120px 120px;
+    margin: 10% 10% 10% 10%;
+    border: rgb(151, 151, 151) solid;
+}
+
+.skill-box{ /*content of each box*/
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+    border: inherit;
+    text-align: center;
+}
+
+.even{
+    background-color: #8cb7d6;
+}
+.odd{
+    background-color: #e6d0bf;
+}
+.odd:hover{
+    opacity: 0.5;
+}
+.even:hover{
+    opacity: 0.5;
+}
+.experience{ /* experience  section*/
+    width: 50%;
+}
+.experience-box-container{ /*container for the expereince description*/
+    position: relative;
+    height: 60%;
+    width: 75%;
+    top: 20px;
+    left: 15%;
+    border-radius: 40px;
+}
+   
+
+
+.experience-box{ /* sets the styling of the background*/
+    position: absolute;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: inherit;
+    height: 100%;
+    width: 100%;
+    color: azure;   
+}
+
+.experience-box p{
+    margin: 0px 15px;
+}
+
+/* Previous roles*/
+
+.timeline{
+    position: relative;    
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    background-color: #B1a296;
+}
+
+.bottom-sticky{
+    width: 75%;
+    height: 10%;
+    text-align: center;
+    background-color: red;
+    position: sticky;
+    bottom: 10px; /*hides the sticky under the */
+    left:12.5%;
+    z-index: -1;
+    padding: 0.7% 0;
+}
+
+.previous-role-title{
+    text-align: center;
+    margin:0px;
+    padding: 15px 0;
+    background-color:   #B1a296;
+}
+.timeline .middle-line{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top:50%;
+    transform: translateY(-50%);
+    background-color:#d9d9d9;
+}
+
+.box{ /* DIV for all description box */
+    width: 15%;
+    position: relative;
+    min-height: 300px;
+    float: right;
+}
+
+.box .date{
+    position: absolute;
+    top:60%;
+    left: 0px;
+    transform: translateY(-50%);
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background: #fff;
+    border: 2px solid #d9d9d9;
+}
+
+.box p{
+    text-align: center;
+}
+.date p{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    color: black;
+}
+
+.box .box-content{
+    border-radius:  5px;
+    background-color: #557a95;
+    width: 180px;
+    position: absolute;
+    left: -80px;
+    padding: 15px;
+    height: 40px;
+}
+.box-content p{
+    margin: 0;
+}
+.box-bottom .box-content{
+    top: 85%;
+}
+.box-top .box-content{
+    top: 10%;
+}
+
+.box-content::before{/** arrows on the box**/
+    content: "";
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    border: 10px solid transparent;
+}
+
+.box-bottom .box-content::before {
+    border-bottom-color: #557a95;
+    top: -20px;
+  }
+.box-top .box-content::before { /*arrow on boxes*/
+    border-top-color: #557a95;
+    bottom: -20px;
+ }
+
+
+
+
+a {
+      text-decoration: none;
+      color: white;
+  }
+
+
+/*Responsive*/
+@media only screen and (max-width: 750px) {
+   nav{
+       display: flex;
+       flex-direction: column-reverse;
+   }
+   .logo{
+       display: none;
+   }
+    ul{
+       display: none;
+       margin: 0;
+   }
+    .hamburger{
+        display: block;
+        border: 0;
+        background-color: red;
+        color: white;
+        font-size: 30px;
+        align-self: flex-end;
+        height: 70px;
+        width: 60px;
+    }
+    .hero{
+        flex-direction: column;
+       height: fit-content;   
+    }
+    .profile-pic{
+        margin:30px 0;
+        height:200px;
+        width:200px;
+    }
+    .intro-btns{
+        margin: 30px 0;
+    }
+
+    /* responsive for skills/expereince section*/
+    .skill-experience{
+        display: flex;
+        flex-direction: column;
+        overflow: auto; /*expands section to include expernence box, fit content does not work)*/
+    }
+
+    .skills-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 90px 90px;
+    }
+
+    .skills{ /* split the width section into 50%*/
+        width: 100%;
+        margin-bottom: -10px;
+    }
+
+    .skills-container{
+        margin-top: 0;
+        margin-bottom:50px ;
+    }
+    .experience{ /* eperience section*/
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+
+    .experience h1{
+        margin-top: 0;
+    }
+
+    .experience-box-container{ /*container for the expereince description*/
+        position: relative;
+        height: 200px;
+        width: 80%;
+        top: 0;
+        left:10%;
+        border-radius: 40px;
+    } 
+
+    .box .box-content{
+        width: auto;
+        left:-50px;
+        padding: 5px;
+        min-height: 40px;
+        height: auto;
+    }
+
+}

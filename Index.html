@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Portfolio</title>
+    <link rel="stylesheet" href="src/style.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <script src="https://kit.fontawesome.com/30677846b0.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="nav-bar">
+      <img class="logo"src="images/hire-me.png" alt="">
+      <ul id="nav-list"><!-- ID for Javascript-->
+        <li><a href="#about-me">About Me</a></li>
+        <li> <a href="#experience-section">Experience</a></li>
+        <li> <a href="#previous-roles-section">Previous Roles</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger"> <!--adds hambuger for responsive design -->
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+      <section class="hero"id="about-me">
+        <img class="profile-pic" src="images/Leah-Pic.PNG" alt="Profile Picture">
+        <div class="intro">
+            <div class="intro-text">
+                <h1 style="font-size: 3em; margin: 0;">Hi, I'm Leah</h1>
+                <h2 style="margin-top: 0;">a bit about me:</h2>
+                <p>
+                  I'm a portfolio analyst at American Express. I am looking to move into Front End Enginnering. Please take a look at this website I've built!
+                </p>
+                <div class="intro-btns">
+                  <div class="btn-cv"><p>My CV</p></div>
+                  <div class="btn-skills"><p><a href="#experience-section">Experience</a></p></div>
+                  <div class="btn-plan"><p><a href="#previous-roles-section">Previous Roles</a></p></div>
+                </div>
+              </div>
+          </div> 
+      </section>
+    <section>
+        <!-- Skills & Experience Section -->
+      <section class="skill-experience" id="experience-section">
+        <div class="skills">
+          <h1 style="text-align: center;">Skill Set</h1>
+          <div class="skills-container">
+            <div class="skill-box even collab-hover"> <p>Collabration</p></div>
+            <div class="skill-box odd comm-hover"> <p>Communication</p></div>
+            <div class="skill-box even proactive-hover"> <p>Proactive</p></div>
+            <div class="skill-box odd inno-hover"> <p>Innovative</p></div>
+            <div class="skill-box odd agile-hover"> <p>Aglie</p></div>
+            <div class="skill-box even rally-hover"> <p>Rally/JIRA</p></div>
+            <div class="skill-box odd time-hover"> <p>Time Management</p></div>
+            <div class="skill-box even tcb-hover"> <p>css grid</p></div>
+          </div>
+        </div> 
+        <div class="experience">
+          <h1 style="text-align: center;">Experience</h1>
+          <div class="experience-box-container">
+            <div id= "empty-box" class="experience-box" >
+              <p class=>this box will give examples of the skill set whenever the mouse hovers over the left side</p>
+            </div>
+        </div>
+      </div>
+     </section>
+
+      <!-- timeline -->
+      
+    <section class="timeline" > 
+      <h1 id="previous-roles-section" class="previous-role-title" >Previous Roles</h1>
+        <div class="middle-line"></div>      
+       <div class="box box-bottom">
+          <div class="date">
+              <p>2019</p>
+          </div>
+          <div class="box-content">
+              <p>American Express - Portfolio Analyst</p>
+          </div>
+        </div>
+        <div class="box box-top">
+          <div class="date">
+            <p>2019</p>
+          </div>
+          <div class="box-content">
+            <p>Project Manager - Legal</p>
+          </div>
+       </div>
+       <div class="box box-bottom">
+        <div class="date">
+            <p>2018</p>
+        </div>
+        <div class="box-content">
+            <p>Business Operations Associate</p>
+        </div>
+      </div>
+      <div class="box box-top">
+        <div class="date">
+          <p>2017</p>
+        </div>
+        <div class="box-content">
+          <p>Service Transformation Associate</p>
+        </div>
+      </div>
+      <div class="box box-bottom">
+        <div class="date">
+            <p>2016</p>
+        </div>
+        <div class="box-content">
+            <p>Business Systems Analyst</p>
+        </div>
+     </div>
+     <div class="box box-top">
+        <div class="date">
+          <p>2014</p>
+        </div>
+        <div class="box-content">
+          <p>UI/UX designer</p>
+        </div>
+     </div>
+    
+     
+    </section>
+    <div class="bottom-sticky"><p>please hire me</p></div>
+    <script src="src/app.js"></script>
+  </body>
+</html>
